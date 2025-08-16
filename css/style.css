@@ -1,0 +1,50 @@
+  html,body {
+margin :0;
+display:flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+font-family: Arial , sans-serif ;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tglvehwaC8aUANsi_DZd2hbiwT-qqe3b4w&s");
+
+}
+
+header{
+    text-align:center;
+    font-weight:bold;
+}
+
+#result-display{
+    font-size: 50px;
+    font-weight: bold;
+    min-height: 30px;
+    margin-top: 10px;
+    color:darkkhaki
+}
+
+button{
+    margin: 10px;
+    font-size:30px;
+    background-color: darkgoldenrod;
+    border: 2px solid rgba(0,0,0,1);
+    width:100px;
+    height: 100px;
+    border-radius:20px;
+   transition:border-color 0.3s ease;
+ 
+}
+
+button:hover{
+    cursor:pointer;
+  }
+h1{
+  font-weight:bold;
+  color:red;
+  height:50px;
+  margin: 30px;
+}
+
+.hidden{
+    display: none;
+};
+
