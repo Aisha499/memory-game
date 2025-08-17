@@ -1,13 +1,16 @@
-  html,body {
+body {
 margin :0;
+height: 100vh;
 display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
 font-family: Arial , sans-serif ;
-background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tglvehwaC8aUANsi_DZd2hbiwT-qqe3b4w&s");
-
-}
+background-image: url("https://nafezly-production.fra1.cdn.digitaloceanspaces.com/uploads/portfolios/26262_62b9d9b1532a8-1656347057.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+ }
 
 header{
     text-align:center;
@@ -27,8 +30,8 @@ button{
     font-size:30px;
     background-color: darkgoldenrod;
     border: 2px solid rgba(0,0,0,1);
-    width:100px;
-    height: 100px;
+    width:45%;
+    height: 80px;
     border-radius:20px;
    transition:border-color 0.3s ease;
  
@@ -37,15 +40,32 @@ button{
 button:hover{
     cursor:pointer;
   }
-h1{
-  font-weight:bold;
-  color:red;
-  height:50px;
-  margin: 30px;
-}
- 
- 
+
 
 #restart {
   visibility: hidden;
 }
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    color:brown;
+    margin-bottom: 5px;
+}
+
+ button img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius: 20px;
+ }
+
+ .setTimer{
+  border-radius:50%;
+  font-size:5px;
+  width: 10px;
+  
+ }
+ #card{
+  color:darkgoldenrod;
+ }

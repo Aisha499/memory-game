@@ -3,23 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
-<link rel="stylesheet" href="./css/style.css">
-<script defer src ="./js/app.js"></script>
+ <style>
+
+a.button {
+    padding: 15px;
+     font-size: 30px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: rgb(43, 33, 70);
+    background-color:  rgb(131, 142, 228);
+    text-decoration: none;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://nafezly-production.fra1.cdn.digitaloceanspaces.com/uploads/portfolios/26262_62b9d9b1532a8-1656347057.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+h1{
+    font-size:60px;
+    text-align:center;
+    color:rgb(230, 86, 131);
+     margin-bottom: 30px;
+  
+}
+ 
+
+
+
+
+ </style>
 <title>Memory Game</title>
 </head>
 
 <body>
-    <header>
-        <h1>Memory Game</h1>
-        <p id="result-display"></p>
-    </header>
-     
-  <section class="button-wrapper">
-<button id="card1">🍊</button>
-<button id="card2">🍇</button>
-<button id="card3">🍊</button>
-<button id="card4">🍏</button>
-<button id="restart" class="hidden">Play Again</button>
- </section>
+
+ <h1>Memory Game</h1>
+     <a href="game.html" class="button">play</a>
+ 
+  </section>
 </body>
 </html>

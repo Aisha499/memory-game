@@ -3,7 +3,7 @@
 /*---------------------------- Variables (state) ----------------------------*/
 let Firstchoice=null;
 let scendchoice=null;
-let msg;
+let setTime=0;
 
 
 /*------------------------ Cached Element References ------------------------*/
@@ -12,47 +12,53 @@ let msg;
  let card2=document.querySelector("#card2");
  let card3=document.querySelector("#card3");
  let card4=document.querySelector("#card4");
+ let time=document.querySelector("#setTimer");
  const restart=document.querySelector("#restart");
 
 /*-------------------------------- Functions --------------------------------*/
   
 const plays=(event) =>{
     if(Firstchoice ===null){
-    Firstchoice=event.target.id;
+    Firstchoice=event.target.dataset.value;
     }
-    else{
-    scendchoice=event.target.id;
+    else {
+        if(Firstchoice===event.target.dataset.value){
+            return;
+        }
+    scendchoice=event.target.dataset.value;
     }
 
 };
 const compare =() =>{
-    if((Firstchoice==='card1' && scendchoice==='card3' )|| (Firstchoice==='card2' && scendchoice==='card4')){
-        msg="you win"
+
+    if((Firstchoice==='card1' && scendchoice==='card3' )|| (Firstchoice==='card2' && scendchoice==='card4') || (Firstchoice==='card5' && scendchoice==='card6') || (Firstchoice==='card3' && scendchoice==='card1' )|| (Firstchoice==='card4' && scendchoice==='card2') || (Firstchoice==='card6' && scendchoice==='card5') ){
+        window.location.href="win.html";
     } else {
-        msg="you lose! try again "
-    }
-}
+        window.location.href="lose.html";
+     }};
 
-const Dis= () =>{
-    Display.textContent= msg;
 
-}
+ 
 const start =(event)=>{
     plays(event);
     if(Firstchoice&&scendchoice){
     compare();
-    Dis();
-    }
+     }
+     setInterval(timer,1000);
      
 }
  
-const playAgin =()=>{
+const playAgain =()=>{
     Firstchoice=null;
     scendchoice=null;
-    Display.textContent="";
-    msg="";
+    window.location.href="index.html";
 }
 
+function timer(){
+setTime +=Math.floor(Math.random()*3);
+time.textContent=setTime;
+
+}
  
 
 /*----------------------------- Event Listeners -----------------------------*/
@@ -61,6 +67,8 @@ const playAgin =()=>{
  document.querySelector("#card2").addEventListener('click',  start);
  document.querySelector("#card3").addEventListener('click',  start);
  document.querySelector("#card4").addEventListener('click',  start);
- document.querySelector("#restart").addEventListener('click',playAgin);
+ document.querySelector("#card5").addEventListener('click',  start);
+ document.querySelector("#card6").addEventListener('click',  start);
+ document.querySelector("#restart").addEventListener('click',playAgain);
  
 
