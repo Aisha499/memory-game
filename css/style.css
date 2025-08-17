@@ -43,8 +43,9 @@ h1{
   height:50px;
   margin: 30px;
 }
+ 
+ 
 
-.hidden{
-    display: none;
-};
-
+#restart {
+  visibility: hidden;
+}

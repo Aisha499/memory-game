@@ -12,6 +12,7 @@ let msg;
  let card2=document.querySelector("#card2");
  let card3=document.querySelector("#card3");
  let card4=document.querySelector("#card4");
+ const restart=document.querySelector("#restart");
 
 /*-------------------------------- Functions --------------------------------*/
   
@@ -22,6 +23,7 @@ const plays=(event) =>{
     else{
     scendchoice=event.target.id;
     }
+
 };
 const compare =() =>{
     if((Firstchoice==='card1' && scendchoice==='card3' )|| (Firstchoice==='card2' && scendchoice==='card4')){
@@ -37,13 +39,19 @@ const Dis= () =>{
 }
 const start =(event)=>{
     plays(event);
-    if(Firstchoice,scendchoice){
+    if(Firstchoice&&scendchoice){
     compare();
     Dis();
     }
      
 }
  
+const playAgin =()=>{
+    Firstchoice=null;
+    scendchoice=null;
+    Display.textContent="";
+    msg="";
+}
 
  
 
