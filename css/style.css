@@ -17,13 +17,7 @@ header{
     font-weight:bold;
 }
 
-#result-display{
-    font-size: 50px;
-    font-weight: bold;
-    min-height: 30px;
-    margin-top: 10px;
-    color:darkkhaki
-}
+
 
 button{
     margin: 10px;
@@ -39,12 +33,10 @@ button{
 
 button:hover{
     cursor:pointer;
-  }
-
-
-#restart {
-  visibility: hidden;
 }
+
+
+
 
 h1{
     font-size: 40px;
@@ -58,14 +50,25 @@ h1{
     height:100%;
     object-fit:contain;
     border-radius: 20px;
- }
+  }
 
- .setTimer{
-  border-radius:50%;
-  font-size:5px;
-  width: 10px;
-  
- }
+
  #card{
   color:darkgoldenrod;
  }
+
+ #card.reld{
+  display:hidden;
+ }
+
+ #result-display{
+    font-size: 50px;
+    font-weight: bold;
+    min-height: 30px;
+    margin-top: 10px;
+    color:darkkhaki
+}
+ 
+.hidden{
+  visibility:hidden;
+}
