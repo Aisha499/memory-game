@@ -35,7 +35,7 @@ let countlose=0;
     function compare2(){
         if(countwin>=3){
          window.location.href="win.html";
-        }else if(countlose>=2){
+        }else if(countlose>=4){
          window.location.href="lose.html";
         }
     }
@@ -57,7 +57,7 @@ function start(event){
 };
 
      mix();
-     
+
 function mix() {
    let arr = [card1, card2, card3, card4, card5, card6];
 
