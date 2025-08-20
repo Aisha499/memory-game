@@ -45,28 +45,19 @@ h1{
     margin-bottom: 5px;
 }
 
- button img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    border-radius: 20px;
-  }
 
 
- #card{
-  color:darkgoldenrod;
- }
 
- #card.reld{
-  display:hidden;
- }
 
- #result-display{
-    font-size: 50px;
-    font-weight: bold;
-    min-height: 30px;
-    margin-top: 10px;
-    color:darkkhaki
+
+
+
+ #countplay{
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color:rgb(213, 10, 145);
+   
 }
  
 .hidden{
